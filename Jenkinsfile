@@ -8,3 +8,4 @@ stage('gradle build'){
       
       sh "${gradleHome}/bin/gradle clean install"
       }
+}
