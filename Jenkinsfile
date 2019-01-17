@@ -4,7 +4,7 @@ node('slave') {
          checkout scm
       }
 stage('gradle build'){
- def mvnHome = tool 'gradle4'
+ def gradleHome = tool 'gradle4'
       
       sh "${mvnHome}/bin/gradle clean install"
       }
